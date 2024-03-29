@@ -22,10 +22,6 @@ systemctl restart systemd-hostnamed
 # Renew DHCP lease
 dhclient
 
-# Clone the repository
-git clone https://github.com/GL0WIK/New-linux-vm.git
-cd New-linux-vm
-
 # Configure network settings
 gateway=$(echo "$ip_addr" | cut -d '.' -f 1-3)".1"
 echo "Gateway: $gateway"
