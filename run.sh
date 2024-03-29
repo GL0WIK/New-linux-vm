@@ -42,3 +42,5 @@ echo "Network configuration applied."
 
 # Inform user about completion
 echo "Setup completed successfully."
+
+reboot
