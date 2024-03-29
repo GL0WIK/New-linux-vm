@@ -38,6 +38,7 @@ rm -rf New-linux-vm
 # Apply network configuration
 netplan apply
 
+sleep 30
 echo "Network configuration applied."
 
 # Inform user about completion
