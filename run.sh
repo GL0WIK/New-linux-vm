@@ -29,11 +29,11 @@ cd New-linux-vm
 # Configure network settings
 gateway=$(echo "$ip_addr" | cut -d '.' -f 1-3)".1"
 echo "Gateway: $gateway"
-sed -i "s/ip-addr/$ip_addr/g" 00-installer-config.yaml
-sed -i "s/gateway/$gateway/g" 00-installer-config.yaml
+sed -i "s/ip-addr/$ip_addr/g" New-linux-vm/00-installer-config.yaml
+sed -i "s/gateway/$gateway/g" New-linux-vm/00-installer-config.yaml
 
 # Copy modified configuration file to netplans directory
-cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
+sudo cp New-linux-vm/00-installer-config.yaml /etc/netplan/00-installer-config.yaml
 
 # Apply network configuration
 netplan apply
