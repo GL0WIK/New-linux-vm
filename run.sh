@@ -31,6 +31,10 @@ sed -i "s/gateway/$gateway/g" 00-installer-config.yaml
 # Copy modified configuration file to netplans directory
 sudo cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
 
+cd ..
+
+rm -rf New-linux-vm
+
 # Apply network configuration
 netplan apply
 
