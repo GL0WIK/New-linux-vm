@@ -1,0 +1,20 @@
+# This is the network config written by 'subiquity'
+#network:
+#  ethernets:
+#    enp6s18:
+#      dhcp4: true
+#  version: 2
+
+
+network:
+  ethernets:
+    enp6s18:
+      addresses:
+      - ip-addr/24
+      nameservers:
+        addresses: [gateway]
+        search: []
+      routes:
+      - to: default
+        via: gateway
+  version: 2
