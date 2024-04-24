@@ -44,6 +44,6 @@ echo "Network configuration applied."
 echo "Setup completed successfully."
 
 echo "Rebooting...."
-echo "Connect to new address : ip_addr"
+echo "Connect to new address : $ip_addr"
 sleep 30
 reboot
